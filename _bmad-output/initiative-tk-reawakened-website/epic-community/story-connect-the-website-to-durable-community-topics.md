@@ -14,7 +14,7 @@ risk: medium
 
 ## Description
 
-Add a clear Community route from the site and a reusable topic-link pattern for tutorials, prompts and future game pages. Show selected activity on the home page when there is something current to share.
+Add a clear Community route from the site and a reusable GitHub Discussions link pattern for tutorials, prompts and future game pages. Evaluate giscus for inline comments. Show selected activity on the home page when there is something current to share.
 
 ## Acceptance Criteria
 
