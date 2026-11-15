@@ -25,7 +25,7 @@ A first-time RPG maker can meet other beginners, ask for help, show progress and
 
 ## Scope
 
-Choose the discussion venue with its moderators. Start with direct discussion links and one prompt. Add embeds or a feed only when they help a visitor reach a useful conversation.
+Start with GitHub Discussions and choose the repository or organization home with its moderators. Provide beginner-friendly categories and direct discussion links. Test GitHub sign-in with a beginner and investigate exporting discussion history. Evaluate giscus for inline replies and add embeds or a feed where they help a visitor reach a useful conversation.
 
 - [Website brief](../brief-tk-reawakened-website/brief-tk-reawakened-website.md)
 - [Moderated catalogue publishing](../brief-tk-reawakened-website/addendum.md#moderated-catalogue-publishing)

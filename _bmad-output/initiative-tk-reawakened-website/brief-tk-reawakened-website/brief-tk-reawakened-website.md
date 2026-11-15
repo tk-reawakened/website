@@ -49,7 +49,7 @@ The proposed funding principle keeps the engine, editor, documentation, public g
 
 ## Open decisions
 
-- Pick the home for help and feedback with its moderators. Choose the intake channel and name the owner for catalogue review, reports, the prompt and its recap. Try the [moderated publishing proposal](addendum.md#moderated-catalogue-publishing) on a game and a Vault item with a newcomer and a returning creator.
+- Choose the repository or organization home for GitHub Discussions and name moderators. Choose the intake channel and name the owner for catalogue review, reports, the prompt and its recap. Try the [moderated publishing proposal](addendum.md#moderated-catalogue-publishing) on a game and a Vault item with a newcomer and a returning creator.
 - Choose [hosting for `tk-reawakened.com`](../epic-documentation-website/discovery/hosting-options.md). Decide where public guides are authored and how product releases provide builds, version data and verification inputs.
 - Decide how the public games catalogue presents the [preservation corpus](https://tk-reawakened.github.io/corpus/) alongside new projects, and who reviews new game submissions and recovery leads. Choose the first featured Vault entries from resources with clear permission, verified compatibility and a beginner-friendly use case.
-- Decide whether durable discussions belong on an existing service or a separately hosted forum. Revisit built-in site accounts, file uploads and game hosting after seeing how people use the curated showcase and feedback channel.
+- Test GitHub Discussions sign-in and posting with a beginner, investigate an export of discussion history, and evaluate giscus for inline comments. Revisit built-in site accounts, file uploads and game hosting after seeing how people use the curated showcase and feedback channel.
