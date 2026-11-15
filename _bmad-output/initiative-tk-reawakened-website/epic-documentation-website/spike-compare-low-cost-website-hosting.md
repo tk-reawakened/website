@@ -21,7 +21,7 @@ Which setup can serve TK Reawakened's website at very low initial cost and handl
 
 1. Compare GitHub Pages, Cloudflare Pages and Workers Static Assets, Netlify, and AWS Amplify. Use dated official plan limits and check build and traffic quotas, hard caps or overages, and what visitors see when a limit is reached.
 2. Model a quiet launch, sustained growth and a short download spike. Show monthly cost and the first paid or service-limiting breakpoint. Account for the site, externally hosted builds and packs or object storage, and the forum as distinct costs. State which figures are measured and which are estimates.
-3. Use the same small static site and one original game example across the top two candidates. Include versioned docs and search, a work-in-progress entry with screenshots and a browser play link, and a Vault entry. Add or update a catalogue record through a reviewed pull request, publish the static build and try a rollback. Use preview addresses and available free allowances for the trial.
+3. Use the same small static site and one original game example across the top two candidates. Use Preact for any interactive UI in the trial. Include versioned docs and search, a work-in-progress entry with screenshots and a browser play link, and a Vault entry. Add or update a catalogue record through a reviewed pull request, publish the static build and try a rollback. Use preview addresses and available free allowances for the trial.
 4. Check the work to connect `tk-reawakened.com`, retain its Porkbun mail forwarding, link to a separate forum and move the static site to another host. Apply Modern Web Guidance in the prototype. Record any access or account prerequisite that prevents a live check.
 
 ## Acceptance criteria
@@ -33,7 +33,7 @@ Which setup can serve TK Reawakened's website at very low initial cost and handl
 ## References
 
 - [Epic 17 and CAP-19](https://github.com/tk-reawakened/rpgtoolkit-reawakened/issues/1362)
-- [Website initiative and hosting comparisons](https://github.com/tk-reawakened/rpgtoolkit-reawakened/pull/2706)
+- [Website initiative and hosting comparisons](https://github.com/tk-reawakened/website/pull/1)
 - [Modern Web Guidance](https://developer.chrome.com/docs/modern-web-guidance)
 
 ## Notes

@@ -4,6 +4,8 @@ This repository serves the official website for TK Reawakened, an independent op
 
 ## Web implementation
 
+Generate the public pages as static HTML and use Preact with TypeScript for interactive components. See the [website initiative’s decision](_bmad-output/initiative-tk-reawakened-website/initiative-tk-reawakened-website.md#web-implementation-guidance).
+
 Use [Modern Web Guidance](https://developer.chrome.com/docs/modern-web-guidance) during website implementation and review regardless of the framework, host, or forum provider. To install the published skill for Codex in this checkout, run:
 
 ```sh

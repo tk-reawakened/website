@@ -6,7 +6,7 @@ This repository is the home for the TK Reawakened website at `tk-reawakened.com`
 - [Website and documentation epic](https://github.com/tk-reawakened/rpgtoolkit-reawakened/issues/1362)
 - [Hosting and publishing research](https://github.com/tk-reawakened/rpgtoolkit-reawakened/issues/2709)
 
-The [BMAD website initiative](_bmad-output/initiative-tk-reawakened-website/initiative-tk-reawakened-website.md) contains the product brief, Epic 17 and its hosting spike. The website stack and production host are open while the hosting spike compares costs and tests catalogue publishing on the leading candidates.
+The [BMAD website initiative](_bmad-output/initiative-tk-reawakened-website/initiative-tk-reawakened-website.md) contains the product brief, Epic 17 and its hosting spike. The website uses Preact for interactive components. The static generator and production host are open while the hosting spike compares costs and tests catalogue publishing on the leading candidates.
 
 ## Working in this repository
 

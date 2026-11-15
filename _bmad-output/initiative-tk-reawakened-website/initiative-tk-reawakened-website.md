@@ -26,4 +26,6 @@ The owner has chosen `tk-reawakened.com` as the site domain. The host is open. S
 
 ## Web implementation guidance
 
+**Decision (2026-11-14).** Use Preact with TypeScript for interactive website components. Generate the public pages as static HTML and load interactive components where needed. This follows the editor’s Preact convention and keeps the same site build usable across candidate hosts. The static generator and hosting provider are open.
+
 Use [Modern Web Guidance](https://developer.chrome.com/docs/modern-web-guidance) for website implementation and review regardless of host, framework or forum choice. The repository’s [agent guidance](../../AGENTS.md) lists how to install the [published skills](https://github.com/GoogleChrome/modern-web-guidance) in the website checkout. The [source repository](https://github.com/GoogleChrome/modern-web-guidance-src) is the upstream authoring and evaluation reference.
