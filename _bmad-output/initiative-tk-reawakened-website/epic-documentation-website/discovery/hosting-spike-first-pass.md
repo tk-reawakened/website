@@ -41,6 +41,20 @@ Model large downloads and forum service independently. For example, a 250 MB dow
 
 The same 5 TB download workload fits the CloudFront Pro transfer allowance. If the downloads share the site's distribution, count game and Vault traffic against the same request and transfer allowances. Model a separate distribution separately if the trial uses one. Measure origin requests and cache behavior before adopting pack or game hosting. [CloudFront flat-rate plans](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/flat-rate-pricing-plan.html)
 
+## AWS self-serve submissions
+
+The creator submits a WIP game or Vault listing. A moderator reviews the submission and a website pull request updates the static catalogue. For an on-site form, keep the submission and review status in a small API and database. If the site accepts files, give authenticated creators short-lived, size-limited browser uploads to a private S3 intake bucket. Keep files private until scan and review pass. The catalogue PR includes only approved metadata and links. Serve creator-supplied web builds on a separate origin from the main site. [S3 browser upload policy](https://docs.aws.amazon.com/AmazonS3/latest/developerguide/sigv4-HTTPPOSTConstructPolicy.html) · [Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy)
+
+| Intake scope | Incremental AWS budget at launch | Estimated development time |
+| --- | ---: | ---: |
+| Linked intake using the community or a GitHub Issue Form, with an external build or download link and a maintainer-written PR | $0 to the website's AWS bill | A few days |
+| Website form for screenshots and externally hosted build or pack links, with sign-in, review status and a small moderator queue | Around $0–$2/month | 1–2 developer weeks total |
+| Website intake with private build and pack uploads, scanning, moderation and approved catalogue PRs | Around $3–$5/month in the modeled workload | 2–4 developer weeks total |
+
+The dollar ranges are planning estimates for US East (N. Virginia), separate from the public CloudFront delivery plan, published file storage, and forum service. The upload model assumes 100 submissions per month, four objects per submission, 20 GB scanned, 20 GB-month retained in private intake, 1,000 HTTP API calls and light logging. At list rates, scanning is about $1.89 and S3 Standard storage about $0.46 before credits. HTTP API and DynamoDB requests are fractions of a cent at that load. Cognito Lite or Essentials and Lambda can fit within their eligible free allowances. One GitHub App key in Secrets Manager would add $0.40/month plus requests if PR creation is automated. [S3 Standard rate example](https://aws.amazon.com/blogs/database/automate-postgresql-audit-log-extraction-and-analysis-with-amazon-s3/) · [GuardDuty pricing](https://aws.amazon.com/guardduty/pricing/) · [HTTP API pricing](https://aws.amazon.com/api-gateway/pricing/) · [DynamoDB pricing](https://aws.amazon.com/dynamodb/pricing/) · [Cognito pricing](https://aws.amazon.com/cognito/pricing/) · [Lambda pricing](https://aws.amazon.com/lambda/pricing/) · [Secrets Manager pricing](https://aws.amazon.com/secrets-manager/pricing/)
+
+The time ranges assume one developer and an existing static site and CI. Budget 10–20 minutes to review a straightforward entry, or about 5–10 hours from moderators for 30 entries. Use the trial to time one WIP submission from creator intake through a moderator checking browser play, screenshots, credit and the discussion backlink, then previewing, publishing and rolling back its catalogue PR. Try a form with external build links first and use a private file upload as a separate proof for when the site takes on storage. [GitHub Issue Forms](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
+
 ## Deployed trial
 
 1. Freeze a site build with a versioned docs page, search, a WIP game and a Vault item. Use Modern Web Guidance and Preact for the interactions. Record the artifact hash.
