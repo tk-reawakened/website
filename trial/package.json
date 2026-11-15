@@ -1,0 +1,1 @@
+{"name":"tkr-hosting-trial","private":true,"type":"module","scripts":{"build":"node build.mjs","check":"tsc --noEmit"},"dependencies":{"preact":"^10.28.4"},"devDependencies":{"esbuild":"^0.28.2","typescript":"^5.9.3"}}

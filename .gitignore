@@ -4,3 +4,7 @@ __pycache__/
 
 # The renderer test requires the BMAD upstream source tree.
 /_bmad/scripts/tests/test_render_skill.py
+/trial/node_modules/
+/trial/dist/
+/trial/runner-fixture/
+/.wrangler/
