@@ -2,7 +2,7 @@
 
 Run `npm ci`, `npm run check` and `npm run build` in this directory. Serve `dist/` at the root of a static host. Run `npm run preview` to view it locally on port 8943.
 
-The root page is a temporary coming-soon landing page. The work-in-progress full homepage remains available at `/preview/`; the other preview pages are still generated.
+The root page is a temporary coming-soon landing page. The normal local build also generates the work-in-progress homepage at `/preview/` and the other preview pages. The production build (`npm run build -- --production`) excludes those pages.
 
 The build generates the shared navigation, page markup and search index. The docs page can be browsed without JavaScript. Preact powers the optional search form.
 
@@ -16,4 +16,4 @@ The Website GitHub Actions workflow checks pull requests and deploys changes mer
 
 Before the first deployment, add `CLOUDFLARE_ACCOUNT_ID` and a least-privilege `CLOUDFLARE_API_TOKEN` as GitHub Actions secrets. The token must be allowed to deploy Workers in the chosen Cloudflare account. Configure the production domain separately after verifying the deployment; do not modify existing mail DNS records. The workflow must be merged into `main` before it can publish.
 
-To check the production package locally, run `npm ci`, `npm run check`, `npm run build`, `npx cf build --mode production`, and `npx cf deploy --prebuilt --mode production --dry-run`. The dry run does not deploy or verify credentials.
+To check the production package locally, run `npm ci`, `npm run check`, `npm run build -- --production`, `npx cf build --mode production`, and `npx cf deploy --prebuilt --mode production --dry-run`. The dry run does not deploy or verify credentials.
