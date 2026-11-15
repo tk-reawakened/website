@@ -11,3 +11,51 @@ covers = ["CAP-19"]
 after = []
 hitl = true
 risk = "medium"
+
+[[entry]]
+id = 2
+tracker_id = "#3"
+remote = "https://github.com/tk-reawakened/website/issues/3"
+type = "story"
+title = "Publish the product home and software downloads"
+description = "A visitor understands what TK Reawakened does, can find the right official release for creating or playing, and can reach the first guide from Home, Create or Docs. Build the static site shell and release-links handoff here."
+verify = "On a small screen and with a keyboard, a visitor finds requirements, the correct shipped build or editor, release notes and matching docs. The site distinguishes preview and stable releases and gives a useful path when a build is unavailable."
+covers = ["CAP-19"]
+after = [1]
+risk = "medium"
+
+[[entry]]
+id = 3
+tracker_id = "#4"
+remote = "https://github.com/tk-reawakened/website/issues/4"
+type = "story"
+title = "Publish searchable documentation by release"
+description = "A reader can browse or search the docs for their installed version. Establish which repository owns guide content and how a product release supplies metadata and verification inputs."
+verify = "Publish two representative docs versions, switch between them, confirm search scopes results to the selected version, and follow versioned deep links after a reload. Exercise the documented release trigger and restore a previous site build."
+covers = ["CAP-19"]
+after = [2]
+risk = "medium"
+
+[[entry]]
+id = 4
+tracker_id = "#5"
+remote = "https://github.com/tk-reawakened/website/issues/5"
+type = "story"
+title = "Write the first-game guide and product reference"
+description = "A beginner can make a small game and a returning creator can import, debug, test, package or share with the released tools. Cover install and editor workflows, RPGCode, troubleshooting and developer contributions in the appropriate guides."
+verify = "The first-game guide has a reproducible original example. Reference examples and commands match the shipped product and normative spec, use the project’s help-text style, and link to the released source of truth."
+covers = ["CAP-19"]
+after = [3]
+risk = "medium"
+
+[[entry]]
+id = 5
+tracker_id = "#6"
+remote = "https://github.com/tk-reawakened/website/issues/6"
+type = "story"
+title = "Prove the downloads and docs against a release"
+description = "A fresh reader can follow the flagship guides using the release they actually download. Fit the inherited Epic 17 verification scope to the published product."
+verify = "Record an independent walkthrough of the shipped flagship tasks and a clean-clone contributor walkthrough. Require checks for links and anchors, accessibility, terminology, runnable examples and drift against the release surface. Retest any blocker found in the walkthrough."
+covers = ["CAP-19"]
+after = [4]
+risk = "medium"

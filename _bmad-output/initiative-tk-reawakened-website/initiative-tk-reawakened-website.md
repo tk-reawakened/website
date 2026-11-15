@@ -12,12 +12,15 @@ Publish the official home for TK Reawakened. Visitors can get the software and f
 
 ## Delivery
 
-- [Epic 17](epic-documentation-website/epic-documentation-website.md) opens the initiative with the website platform and owns CAP-19, including versioned product and contributor docs. Its [GitHub issue](https://github.com/tk-reawakened/rpgtoolkit-reawakened/issues/1362) tracks that work.
-- The [draft website brief](brief-tk-reawakened-website/brief-tk-reawakened-website.md) proposes the navigation and a first community participation flow. The showcase, prompts and feedback operations need scope and owners before inception.
+1. **Engine and docs.** [Epic 17](epic-documentation-website/epic-documentation-website.md) gives visitors a clear explanation of the product, official downloads and searchable docs for their release. The home page leads to the first-game guide under Create or Docs. The [product initiative](https://github.com/tk-reawakened/rpgtoolkit-reawakened/blob/main/_bmad-output/initiative-rpgtoolkit-reawakened/initiative-rpgtoolkit-reawakened.md) supplies the engine, editor and release artifacts. The release walkthrough proves a beginner can use both the software and the docs.
+2. **Community.** [Epic 29](epic-community/epic-community.md) opens a moderated place for beginner questions, playtesting and feedback. Connect the site to durable discussions and run one small prompt to give new makers a reason to participate.
+3. **Asset and game sharing.** [Epic 30](epic-game-submissions/epic-game-submissions.md) delivers the Games catalogue and moderated game submissions. [Epic 31](epic-vault/epic-vault.md) delivers the Vault for extensions, templates and asset packs. Creators supply links and listing details. Moderators review submissions and publish approved entries through website pull requests.
+
+The [website brief](brief-tk-reawakened-website/brief-tk-reawakened-website.md) supplies the audience, navigation and acceptance scenarios for the three stages. The [organization roadmap](https://github.com/orgs/tk-reawakened/projects/3) tracks the epics and stories.
 
 ## Repository and release handoff
 
-The website has its own [repository](https://github.com/tk-reawakened/website). This planning import carries Epic 17, its discovery notes, the website brief and the hosting spike from the [product planning PR](https://github.com/tk-reawakened/rpgtoolkit-reawakened/pull/2706). The existing Epic 17 and spike issues continue to track the work on the organization roadmap. The product initiative can link its CAP-19 handoff here once the planning import lands.
+The website has its own [repository](https://github.com/tk-reawakened/website). This planning import carries Epic 17, its discovery notes, the website brief and the hosting spike from the [product planning PR](https://github.com/tk-reawakened/rpgtoolkit-reawakened/pull/2706). The existing [Epic 17](https://github.com/tk-reawakened/rpgtoolkit-reawakened/issues/1362) and [hosting spike](https://github.com/tk-reawakened/rpgtoolkit-reawakened/issues/2709) keep their issue IDs. New website issues live in the website repository. The product initiative can link its CAP-19 handoff here once the planning import lands.
 
 The product repository is the source of released builds and the normative specification. The website directs visitors to official builds and publishes public docs. Decide how the two repositories exchange release metadata and verification inputs, and where the guide source lives, before choosing the publication workflow.
 

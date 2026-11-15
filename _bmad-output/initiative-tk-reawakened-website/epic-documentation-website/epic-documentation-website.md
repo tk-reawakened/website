@@ -19,6 +19,8 @@ User documentation, contributor and developer documentation, and a public websit
 
 A person who has never seen the project can find the site, install or open the product on a host that ships, make a first game, import an old game, debug a script and package and share the result, using only the published documentation; a contributor can set up the repository and write a plugin from the developer documentation. The CAP-19 success check, a reader who did not write the documentation completing each flagship task from the published site against the release build, is the signal.
 
+This is the first website delivery priority. Product downloads, a clear introduction and a path to the first guide form the public front door. The hosting spike uses a representative game and Vault entry as test fixtures. The [Community](../epic-community/epic-community.md), [Games](../epic-game-submissions/epic-game-submissions.md) and [Vault](../epic-vault/epic-vault.md) epics own delivery of those public features.
+
 ## Done when
 
 1. The user documentation has a page set for each task the released product supports: getting started; installing or opening on each shipped host; the project workflow and each editor tool that ships; the RPGCode guide and the built-in reference; file formats and importing legacy and TK2 games, with what does not carry over; debugging and testing scripts; packaging and sharing; troubleshooting and requirements; and reference (project layout, keys, settings, glossary, what is new). A task the product does not ship is not described as available.

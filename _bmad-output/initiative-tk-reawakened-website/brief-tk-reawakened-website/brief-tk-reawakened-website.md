@@ -9,7 +9,9 @@ updated: 2026-11-14
 
 The official site at `tk-reawakened.com` introduces TK Reawakened to people who want to learn to make RPGs. It helps them get the software, see what they can make, and meet other beginners who are learning and building together. Returning creators can find the right release for their old projects and share what they know. Players and creators can discover games, share new work, and help preserve Toolkit history.
 
-## Proposed launch
+## Delivery priorities
+
+Launch the product home, downloads and release-matched documentation first. Open the moderated Community and run a first feedback round second. Publish the Games catalogue, game submissions and the Vault third. The [website initiative](../initiative-tk-reawakened-website.md#delivery) tracks the separate epics. The areas below describe the site as those stages land.
 
 The home page explains what TK Reawakened is, shows what someone can do with it, and makes the software easy to get. It points directly to the first guide under Create or Docs, where the steps live. It also features games from the collection and shows how to contribute another game. Give extensions and asset packs visible placement on the home page and a direct route to the Vault. Introduce the people making games, tools and resources together. The [16-bit workshop proposal](addendum.md#16-bit-workshop) records one navigation and visual direction to test.
 

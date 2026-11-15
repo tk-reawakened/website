@@ -6,3 +6,24 @@ tracker_id = "#1362"
 slug = "epic-documentation-website"
 title = "Documentation and public website: install, make, import, debug, package and share games"
 covers = ["CAP-19"]
+
+[[epic]]
+id = 29
+tracker_id = "#7"
+slug = "epic-community"
+title = "Community for new RPG creators"
+after = [{ epic = 17, needs = "the published product and docs and the release walkthrough (17.5)" }]
+
+[[epic]]
+id = 30
+tracker_id = "#11"
+slug = "epic-game-submissions"
+title = "Games catalogue and moderated game submissions"
+after = [{ epic = 29, needs = "the community topic links and first feedback round (29.2, 29.3)" }]
+
+[[epic]]
+id = 31
+tracker_id = "#15"
+slug = "epic-vault"
+title = "The Vault for extensions, templates and asset packs"
+after = [{ epic = 29, needs = "the community topic links and first feedback round (29.2, 29.3)" }, { epic = 30, needs = "the reviewed catalogue PR workflow (30.2), for Vault submissions" }]

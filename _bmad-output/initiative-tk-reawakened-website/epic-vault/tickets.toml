@@ -1,0 +1,23 @@
+# Epic 31 entries in build order.
+
+[[entry]]
+id = 1
+tracker_id = "#16"
+remote = "https://github.com/tk-reawakened/website/issues/16"
+type = "story"
+title = "Make beginner-friendly Vault resources discoverable"
+description = "Publish the Vault and give it visible placement on the home page. Seed approved extensions, templates or asset packs grouped by the task they help with and by resource type."
+verify = "A beginner finds one item from the home page or a matching guide, sees the supported release, credit, licence and installation steps, and uses it in an original example project."
+after = ["29.2", "29.3"]
+risk = "medium"
+
+[[entry]]
+id = 2
+tracker_id = "#17"
+remote = "https://github.com/tk-reawakened/website/issues/17"
+type = "story"
+title = "Let creators submit Vault resources through a reviewed GitHub PR"
+description = "Reuse the game catalogue’s intake and PR workflow with Vault-specific checks for licence, author credit, compatibility, installation and the download or source link."
+verify = "A creator submits an extension or pack through the guided intake. A moderator verifies it on a supported build, previews and publishes the entry by PR, and can update or remove it without changing the rest of the catalogue."
+after = [1, "30.2"]
+risk = "medium"

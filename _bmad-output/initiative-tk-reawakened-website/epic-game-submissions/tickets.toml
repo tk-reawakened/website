@@ -1,0 +1,34 @@
+# Epic 30 entries in build order.
+
+[[entry]]
+id = 1
+tracker_id = "#12"
+remote = "https://github.com/tk-reawakened/website/issues/12"
+type = "story"
+title = "Publish the Games catalogue with a playable WIP"
+description = "Create catalogue records and browse pages for preserved games, new releases and Work in Progress. Seed one authored browser-playable game and link to approved corpus entries where their listing rights and availability are known."
+verify = "A player can distinguish preserved, released and in-progress games. A featured WIP has credited screenshots, a browser-playable build, a specific feedback request and a direct link to its Community topic. The topic links back to the same stable game URL."
+after = ["29.2", "29.3"]
+risk = "medium"
+
+[[entry]]
+id = 2
+tracker_id = "#13"
+remote = "https://github.com/tk-reawakened/website/issues/13"
+type = "story"
+title = "Let creators submit games through a reviewed GitHub PR"
+description = "Provide beginner-friendly intake for a new game or recovery lead. Collect a description, screenshots, build or source link, credit and permission, and the discussion link where applicable. Have a moderator verify the candidate and open a catalogue PR using the shared review and publish workflow."
+verify = "A creator submits a playable WIP without editing repository files. A moderator can request changes, verify browser play and listing rights, and preview the static entry. A reviewed merge publishes the metadata and its links. Recovery leads stay in review until rights and availability are verified."
+after = [1]
+risk = "medium"
+
+[[entry]]
+id = 3
+tracker_id = "#14"
+remote = "https://github.com/tk-reawakened/website/issues/14"
+type = "story"
+title = "Keep published game pages current and reversible"
+description = "Document how a maintainer updates a build, handles broken links or a removal request, and moves an entry from WIP to release. Reuse the static artifact rollback path."
+verify = "Walk one game from submission to publication to update. Preserve its public URL and topic on promotion, then exercise removal and rollback with the fixture so visitors see a valid catalogue in each state."
+after = [2]
+risk = "medium"
