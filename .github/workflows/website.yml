@@ -32,7 +32,7 @@ jobs:
           cache-dependency-path: site/package-lock.json
       - run: npm ci
       - run: npm run check
-      - run: npm run build
+      - run: npm run build -- --production
       - run: npx cf build --mode production
       - run: npx cf deploy --prebuilt --mode production --dry-run
       - name: Publish to Cloudflare

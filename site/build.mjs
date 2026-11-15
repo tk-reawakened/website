@@ -273,6 +273,11 @@ const pages = new Map([
       <li><h2>Software</h2><a href="/notices/preact-MIT.txt">Preact MIT license</a></li>
     </ul>`)],
 ]);
+if (process.argv.includes('--production')) {
+  for (const route of pages.keys()) {
+    if (route !== '/') pages.delete(route);
+  }
+}
 
 await rm('dist', { recursive: true, force: true });
 await mkdir('dist/notices', { recursive: true });
